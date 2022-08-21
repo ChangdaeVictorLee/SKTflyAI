@@ -1,0 +1,9 @@
+# 한글 오류 안 뜨게 함
+import os
+import matplotlib.pyplot as plt
+
+if os.name == 'posix':
+    plt.rc("font", family="AppleGothic")
+
+else:
+    plt.rc("font", family="Malgun Gothic")
